@@ -67,24 +67,24 @@ Jogador -> Struct que representa cada jogador (nome, pilha de cartas e os pontos
 
 --Principais funções:--
 
-criarCarta()	Cria uma carta com os naipes e valores.
+criarCarta() -	Cria uma carta com os naipes e valores.
 
-adicionarCarta()	Adiciona uma carta na pilha.
+adicionarCarta() -	Adiciona uma carta na pilha.
 
-removerCarta()	Remove a carta do topo da pilha.
+removerCarta() -	Remove a carta do topo da pilha.
 
-removeCartaAleatoria()	Remove uma carta aleatória da pilha.
+removeCartaAleatoria() -	Remove uma carta aleatória da pilha.
 
-criarBaralho()	Cria um baralho completo com 52 cartas.
+criarBaralho() -	Cria um baralho completo com 52 cartas.
 
-embaralhar()	Embaralha o baralho.
+embaralhar() -	Embaralha o baralho.
 
-listarCartas()	Mostra todas as cartas da pilha dos jogadores.
+listarCartas() -	Mostra todas as cartas da pilha dos jogadores.
 
-mensagensVitorias()	Exibe uma mensagem aleatória de vitória no final rodada.
+mensagensVitorias() -	Exibe uma mensagem aleatória de vitória no final rodada.
 
-mensagensDerrotas()	Exibe uma mensagem aleatória de derrota no final rodada.
+mensagensDerrotas() -	Exibe uma mensagem aleatória de derrota no final rodada.
 
-mensagensEmpate()	Exibe uma mensagem aleatória caso dê empate na rodada.
+mensagensEmpate() -	Exibe uma mensagem aleatória caso dê empate na rodada.
 
-salvarPlacar()	Salva o resultado da partida em um arquivo chamado placar.txt.
+salvarPlacar() -	Salva o resultado da partida em um arquivo chamado placar.txt.
