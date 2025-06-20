@@ -97,3 +97,29 @@ void embaralhar(Carta baralho[], int tamanho) {
         baralho[r] = temp;
     }
 }
+
+void listarCartas(cartaNo* pilha) {
+    if (pilha == NULL) {
+        printf("Sem cartas.\n");
+        return;
+    }
+
+    cartaNo* aux = pilha;
+    int i = 1;
+    while (aux != NULL) {
+        printf("%d - ", i++);
+        mostrarCarta(aux->carta);
+        printf("\n");
+        aux = aux->prox;
+    }
+}
+
+int contarCartas(cartaNo* pilha) {
+    int cont = 0;
+    cartaNo* aux = pilha;
+    while (aux != NULL) {
+        cont++;
+        aux = aux->prox;
+    }
+    return cont;
+}
