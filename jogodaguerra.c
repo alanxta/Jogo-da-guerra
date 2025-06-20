@@ -64,6 +64,13 @@ void adicionarCarta(cartaNo** pilha, Carta carta) {
     }
 }
 
+void mostrarCarta(Carta c) {
+    char* naipes[] = {"Copas", "Ouros", "Espadas", "Paus"};
+    char* valores[] = {"", "As", "2", "3", "4", "5", "6", "7",
+                        "8", "9", "10", "Valete", "Dama", "Rei"};
+    printf("%s de %s", valores[c.valor], naipes[c.naipe]);
+}
+
 
 Carta removerCarta(cartaNo** pilha) {
     if (*pilha == NULL) {
@@ -303,6 +310,11 @@ int main() {
                     printf("=====================\n");
                     printf("Escolha o numero da carta que deseja jogar: ");
                     scanf("%d", &escolha);
+                    if (escolha > totalCartas)
+                    {
+                      printf("Esta carta nao existe\n");
+                    }
+                    
                     getchar();
                 } while (escolha < 1 || escolha > totalCartas);
 
@@ -409,4 +421,3 @@ int main() {
     printf("\nObrigado por jogar o jogo da guerra!\n");
     return 0;
 }
-
